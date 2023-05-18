@@ -1,0 +1,116 @@
+
+.card{
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-size: 24px;
+} 
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: hsl(258, 100%, 48%);
+    max-width: 20%;
+    &__logo{
+        display: inline-block;
+        color: orange;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 30px; 
+    }
+    &__logo::first-letter{
+        color: green;
+        font-size: 80px;
+    }
+}
+address{
+    white-space: nowrap;
+}
+.fa-brands {
+    color: white;
+  }
+.photoSection{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    &__bar {
+        width: 150px;
+        height: 10px;
+        background-color: hsl(258, 100%, 48%);
+        padding: 20px;
+    }
+    &__img {
+        background-image: url(./assets/-864rs6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;
+        background-position: bottom right;
+        position: relative;
+    }
+    &__smallBar{
+        width: 100px;
+        height: 5px;
+        background-color: rgb(69, 0, 245);
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+}
+
+.content{
+    width: 45%;
+    background-color: white;
+    color: rgb(39, 39, 39);
+    position: relative;
+
+}
+.btn{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50.50px;
+    margin-left: 100%;
+    &__bar{
+        background-color: rgb(39, 39, 39);
+        margin: 1px;
+        padding: 2px;
+        
+    }
+}
+.name{
+    margin-top: 330px;
+    margin-left: 90px;
+    &__fName{
+        color: rgb(39, 39, 39);
+        margin-bottom: 0;
+    }
+    &__lName{
+        color: rgb(69, 0, 245);
+        margin: 0;
+    
+    }
+    &__position{
+        margin-top: 0;
+    }
+    &__btn{
+        background-color: rgb(69, 0, 245);
+        padding: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    &__btn:link{
+        text-decoration: none;
+
+    }
+    &__bar{
+        width: 50px;
+        height: 5px;
+        background-color: rgb(69, 0, 245);
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+}
+
