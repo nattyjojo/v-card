@@ -9,68 +9,55 @@
     <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-    <main class="card">
-        <section class="contact">
-            <a class="contact__logo" href="#">VCARD</a>
-            <footer class="contact__footer">
+    <main class="vcard">
+        <section class="contactWrapper">
+            <a class="contactWrapper__logo" href="#">Vcard</a>
+            <address class="contactWrapper__contact">
+                <strong>Email</strong><br>
+                <em>vcard@vmail.com</em><br><br>
+                <strong>Phone</strong><br>
+                <em>+189 882 3533 234</em><br><br>
+                <strong>Find Me On</strong><br>
                 <section>
-                    <address>
-                        <strong>
-                            Email
-                        </strong><br>
-                        myvcard@ymail.com <br><br>
-                        <strong>
-                            Phone
-                        </strong><br>
-                        +017 005 02023 <br> <br>
-                        <strong>
-                            Find Me On
-                            <section>
-                                <a class="icons" href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                                <a class="icons" href="#"> <i class="fa-brands fa-twitter"></i></a>
-                                <a class="icons" href="#"> <i class="fa-brands fa-youtube"></i></a>
-                                <a class="icons" href="#"> <i class="fa-brands fa-dribbble"></i></a>
-                            </section>
-                        </strong>
-                    </address>
+                <a class="icons" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icons" href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a class="icons" href="#"> <i class="fa-brands fa-youtube"></i></a>
+                <a class="icons" href="#"> <i class="fa-brands fa-dribbble"></i></a>
                 </section>
-            </footer>
+            </address>
         </section>
-        <section class="photoSection">
-            <div class="photoSection__bar"></div>
-            <i class="photoSection__img">
-                <div class="photoSection__smallBar"></div>
-            </i>
-            <div class="photoSection__bar"></div>
+        <section class="photoWrapper">
+            <div class="photoWrapper__bar"></div>
+            <div class="photoWrapper__img">
+                <img src="./assets/-864rs6.jpg" alt="john">
+                <div class="photoWrapper__smallbar"></div>
+            </div>
+            <div class="photoWrapper__bar"></div>
         </section>
-        <section class="content">
 
-            <a class="btn" href="#">
-                <span class="btn__bar"></span>
-                <span class="btn__bar"></span>
-                <span class="btn__bar"></span>
-            </a>
-            <section class="name">
-                <header>
-                    <h1 class="name__fName">
-                        JOHN 
-                    </h1>
-                    <h2 class="name__lName">
-                        CHIMEZIE
-                    </h2>
-                    <h3 class="position">
-                        Junior Webdeveloper - Becode Bxl
-                    </h3>
-                    <article>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus deserunt explicabo quaerat adipisci odit, enim tempore rerum veniam, quisquam cum error rem iusto iure asperiores.
-                    </article>
-                    <div>
-                        <a class="name__btn" href="#">PORTFOLIO</a>
-                        <a class="name__btn" href="#">RESUME</a>
-                    </div>
+        <section class="contentWrapper">
+            <a class="contentWrapper__btn" href="#"><i class="fa-solid fa-bars fa-2x"></i></a>
+            <article class="article">
+                <header class="article__details">
+                    <h1 class="article__fName">JOHN</h1>
+                    <h2 class="article__lName">CHIMEZIE</h2>
+                    <div class="article__smallBar"></div>
+                    <br>
+                    <h3 class="article__title">Junior WebDeveloper - Becode Bxl</h3>
+                    <br><br>
+                    <p class="article__aboutMe">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                        deseruipsam debitis facere sapiente? Assumenda labore minus odio.
+                         Iusto ea deserunt ex qui nesciunt?
+                    </p>
                 </header>
-            </section>
-            <span class="name__bar"></span>
+                <br>
+                <br>
+                <nav class="vcard__navwrapper">
+                    <button >PORTFOLIO</button>
+                    <button class="btn__resume">RESUME</button>
+                   </nav> 
+            </article>
         </section>
     </main>
 </body>

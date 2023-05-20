@@ -1,116 +1,108 @@
 
-.card{
-    height: 100vh;
-    display: flex;
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a{
     color: white;
-    font-size: 24px;
-} 
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+.vcard{
+    height: 100vh;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 25vw 35vw 40vw;
+    
+}
+.contactWrapper{
+    display: grid;
+    grid-template-rows: repeat(2, ifr);
+    background-color: rgb(76, 0, 247);
+    color: rgb(205, 197, 228);
     padding: 10px;
-    background-color: hsl(258, 100%, 48%);
-    max-width: 20%;
     &__logo{
         display: inline-block;
-        color: orange;
-        text-decoration: none;
+        color: black;
         font-weight: bolder;
-        font-size: 30px; 
+        font-size: 20px; 
     }
     &__logo::first-letter{
-        color: green;
-        font-size: 80px;
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
     }
-}
-address{
-    white-space: nowrap;
-}
-.fa-brands {
-    color: white;
-  }
-.photoSection{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    &__bar {
-        width: 150px;
-        height: 10px;
-        background-color: hsl(258, 100%, 48%);
-        padding: 20px;
+    &__contact{
+       padding-top: 100%;
     }
-    &__img {
-        background-image: url(./assets/-864rs6.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex: 1;
-        background-position: bottom right;
+   
+}
+.photoWrapper{
+    &__bar{
+        background-color: rgb(76, 0, 247);
+        width: 10vw;
+        height: 5vh;
+    }
+    &__img{
         position: relative;
     }
-    &__smallBar{
-        width: 100px;
-        height: 5px;
-        background-color: rgb(69, 0, 245);
+    &__smallbar{
+        background-color: rgb(50, 0, 169);
+        height: .50vh;
+        width: 5vw;
         position: absolute;
-        top: 50%;
         right: 0;
+        top: 40vh;
     }
 }
-
-.content{
-    width: 45%;
-    background-color: white;
-    color: rgb(39, 39, 39);
+img{
+    width: 35vw;
+    height: 89.50vh;
+}
+.contentWrapper{
     position: relative;
-
-}
-.btn{
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50.50px;
-    margin-left: 100%;
-    &__bar{
-        background-color: rgb(39, 39, 39);
-        margin: 1px;
-        padding: 2px;
-        
+    padding: 10px;
+    color: rgb(78, 77, 83);
+    &__btn{
+        display: block;
+        margin-left: 90%;
+        margin-top: 25px;
+        color: rgb(38, 38, 38);
     }
 }
-.name{
-    margin-top: 330px;
-    margin-left: 90px;
+.article{
+    margin-left: 50px;
+    &__details{
+        margin-top: 25vh;
+
+    }
     &__fName{
-        color: rgb(39, 39, 39);
-        margin-bottom: 0;
+        color: black;
+        font-size: 30px;
     }
     &__lName{
-        color: rgb(69, 0, 245);
-        margin: 0;
-    
+        color: rgb(50, 0, 169);
     }
-    &__position{
-        margin-top: 0;
-    }
-    &__btn{
-        background-color: rgb(69, 0, 245);
-        padding: 10px;
-        display: inline-block;
-        margin-top: 10px;
-        border-radius: 10px;
-    }
-    &__btn:link{
-        text-decoration: none;
-
-    }
-    &__bar{
-        width: 50px;
-        height: 5px;
-        background-color: rgb(69, 0, 245);
+    &__smallBar{
+        background-color: rgb(50, 0, 169);
+        height: .50vh;
+        width: 2vw;
         position: absolute;
-        top: 50%;
         left: 0;
+        top: 45vh;
     }
 }
-
+button{
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: rgb(76, 0, 247);
+    color: white;
+    border-color: white;
+}
+.btn__resume{
+    background-color: white;
+    color: black;
+    border-color: 4px solid black;
+    margin-left: 10px;
+}
